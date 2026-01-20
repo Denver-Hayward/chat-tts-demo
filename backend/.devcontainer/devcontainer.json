@@ -1,0 +1,14 @@
+{
+	"name": "poetry3-poetry-pyenv",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+    "mounts": [
+        "type=bind,source=${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh"
+    ],
+	"customizations": {
+	"vscode": {
+		"extensions":["ms-python.python", "njpwerner.autodocstring"]
+		}
+	}
+}
